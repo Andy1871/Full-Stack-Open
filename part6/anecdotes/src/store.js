@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import anecdoteService from "./services/anecdotes";
 
-const useAnecdoteStore = create((set, get) => ({
+export const useAnecdoteStore = create((set, get) => ({
   anecdotes: [],
   filter: "",
   actions: {
@@ -37,9 +37,11 @@ export const useAnecdotes = () => {
   const anecdotes = useAnecdoteStore((state) => state.anecdotes);
   const filter = useAnecdoteStore((state) => state.filter);
 
-  return anecdotes.filter((anecdote) =>
-    anecdote.content.toLowerCase().includes(filter.toLowerCase()),
-  );
+  return anecdotes
+    .filter((anecdote) =>
+      anecdote.content.toLowerCase().includes(filter.toLowerCase()),
+    )
+    .toSorted((a, b) => b.votes - a.votes);
 };
 export const useFilter = () => useAnecdoteStore((state) => state.filter);
 export const useAnecdotesActions = () =>

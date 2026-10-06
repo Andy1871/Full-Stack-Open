@@ -11,7 +11,6 @@ const AnecdoteList = () => {
     initialize();
   }, [initialize]);
 
-  const sortedAnecdotes = anecdotes.toSorted((a, b) => b.votes - a.votes);
 
   const handleVote = (anecdote) => {
     vote(anecdote.id);
@@ -25,7 +24,7 @@ const AnecdoteList = () => {
 
   return (
     <div>
-      {sortedAnecdotes.map((anecdote) => (
+      {anecdotes.map((anecdote) => (
         <div key={anecdote.id}>
           <div>{anecdote.content}</div>
           <div>
