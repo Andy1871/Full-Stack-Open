@@ -1,0 +1,21 @@
+import { useState } from "react";
+import { createContext } from "react";
+
+const NotificationContext = createContext();
+
+export default NotificationContext;
+
+export const NotificationContextProvider = (props) => {
+  const [notification, setNotification] = useState(null);
+
+  const showNotification = (message) => {
+    setNotification(message);
+    setTimeout(() => setNotification(null), 5000);
+  };
+
+  return (
+    <NotificationContext.Provider value={{ notification, showNotification }}>
+      {props.children}
+    </NotificationContext.Provider>
+  );
+};
