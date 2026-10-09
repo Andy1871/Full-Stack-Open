@@ -1,0 +1,40 @@
+{
+  "anecdotes": [
+    {
+      "content": "Premature optimization is the root of all evil",
+      "author": "Donald Knuth",
+      "info": "http://wiki.c2.com/?PrematureOptimization",
+      "votes": 0,
+      "id": "2"
+    },
+    {
+      "content": "test",
+      "author": "test",
+      "info": "test",
+      "votes": 0,
+      "id": "ls2Jrna66Kw"
+    },
+    {
+      "content": "an anecdote created by playwright 1791568796721",
+      "author": "Playwright",
+      "info": "https://playwright.dev",
+      "votes": 0,
+      "id": "0PQnR2cijRE"
+    },
+    {
+      "content": "an anecdote created by playwright 1791568961557",
+      "author": "Playwright",
+      "info": "https://playwright.dev",
+      "votes": 0,
+      "id": "ku6umWD8qgM"
+    },
+    {
+      "content": "an anecdote created by playwright 1791569043372",
+      "author": "Playwright",
+      "info": "https://playwright.dev",
+      "votes": 0,
+      "id": "-LofBlnyGnc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
