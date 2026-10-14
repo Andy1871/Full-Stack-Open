@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFuZHlUZXN0IiwiaWQiOiI2YTk3MDUxMGEwNDE3ZWY3MDVkN2QxYjciLCJpYXQiOjE3ODg0NTU1MjN9.AP8itANq3fk4KbhNjWMYysFx8DF0xFUd7_uy9eoxnr8
+
+{
+  "title": "Test Blog Post w token",
+  "author": "Andy",
+  "url": "https://token.co.uk",
+  "likes": 13
+}

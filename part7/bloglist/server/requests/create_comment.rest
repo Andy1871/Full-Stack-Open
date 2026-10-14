@@ -1,0 +1,24 @@
+POST http://localhost:3003/api/blogs/6a9eff64c3d5453e3b786986/comments
+Content-Type: application/json
+
+{
+  "comment": "Great post, really useful!"
+}
+
+###
+
+POST http://localhost:3003/api/blogs/6a9eff64c3d5453e3b786986/comments
+Content-Type: application/json
+
+{
+  "comment": "I disagree with the second point."
+}
+
+###
+
+POST http://localhost:3003/api/blogs/6a9eff64c3d5453e3b786986/comments
+Content-Type: application/json
+
+{
+  "comment": "Thanks for sharing."
+}
